@@ -1,0 +1,47 @@
+.left-in,
+.left-out {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes left-in {
+  0% {
+    -webkit-transform: translate3d(-2000px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes left-in {
+  0% {
+    transform: translate3d(-2000px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.left-in {
+  -webkit-animation-name: left-in;
+  animation-name: left-in;
+}
+@-webkit-keyframes left-out {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-2000px, 0, 0);
+  }
+}
+@keyframes left-out {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+.left-out {
+  -webkit-animation-name: left-out;
+  animation-name: left-out;
+}
